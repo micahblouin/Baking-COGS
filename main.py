@@ -2,6 +2,7 @@ from pprint import pprint
 
 name = input('Please enter the Ingredient Name: ')
 purchPrice = input('Please enter the most recent Purchase Price: ')
+purchQuantity = input('Please enter the most recent Purchase Quantity: ')
 purchUnit = input('Please enter the most recent Purchase Unit: ')
 useUnit = input('Please enter the Usage Unit: ')
 wstPrcnt = input('Please enter the Waste Percentage: ')
@@ -10,10 +11,10 @@ class Ingredient:
     def __init__(self, name, purchPrice, purchUnit, useUnit, wstPrcnt):
         self.name = name
         self.purchPrice = purchPrice
+        self.quantity = purchQuantity
         self.purchUnit = purchUnit
         self.useUnit = useUnit
         self.wstPrcnt = wstPrcnt
-
 # calculates cost as purchased per use
 
     def useRaw(self, use):
